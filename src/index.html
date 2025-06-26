@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/HotelDatabase/wwwroot/img/icon.png"
+    />
+
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>HOLETIFY</title>
+    <script defer src="/src/index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="/HotelDatabase/wwwroot/img/logo.png"
+          alt="Hotelify logo"
+          class="nav__logo"
+          id="logo"
+          designer="Aditya"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links"> 
+          <li class="nav__item">
+            <a class="nav__link" href="#section1">Services</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#Footer">About US</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__linked nav__linked" href="book.html">Book Now</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__linked nav__linked" href="ContactUs.html"
+              >Contact Us</a
+            >
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Sign up/Sign in</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__title">
+        <h1>
+          Best Hotels You<br />
+          Can Find
+        </h1>
+      </div>
+    </header>
+    <section class="section" id="section1">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Rooms that are Modern and match your Aesthetic!
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Very Friendly Staff</h5>
+
+            <img
+              src="/HotelDatabase/wwwroot/img/staffimg.jpg"
+              alt="staff-image"
+              class="testimonial__text"
+            />
+            </wwwroot/img>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Modern and Clean Rooms</h5>
+            <img
+              src="/HotelDatabase/wwwroot/img/roomimg.jpg"
+              alt="staff-image"
+              class="testimonial__text"
+            />
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Michelin star Chefs and Food</h5>
+            <img
+              src="/HotelDatabase/wwwroot/img/foodimg.jpg"
+              alt="staff-image"
+              class="testimonial__text"
+            />
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">The best day to join Hotelify is today!</h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer" id="Footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img
+        src="/HotelDatabase/wwwroot/img/icon.png"
+        alt="Logo"
+        class="footer__logo"
+      />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://www.instagram.com/aditya.parihaarr/"
+          >Aditya Parihar</a
+        >.
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

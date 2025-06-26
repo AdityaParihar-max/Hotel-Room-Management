@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/HotelDatabase/wwwroot/img/icon.png"
+    />
+
+    <link rel="stylesheet" href="/src/ContactUs.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>HOTELIFY</title>
+    <script defer src="/src/ContactUs.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="/HotelDatabase/wwwroot/img/logo.png"
+          alt="Hotelify logo"
+          class="nav__logo"
+          id="logo"
+          designer="Aditya"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__linked nav__linked" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__linked nav__linked" href="book.html">Book Now</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#Footer">About US</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Sign up/Sign in</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__title"></div>
+    </header>
+
+    <!-- /////////////////////////////////////////////////////////////////////// -->
+
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="decorative-image"></div>
+      </div>
+      <div class="contact-right">
+        <h1>Contact Us</h1>
+        <p>Contact us for any queries, assistance, or to book your stay.</p>
+        <div class="contact-info">
+          <p><strong>Address:</strong> 123 Hotel Street, Paradise City</p>
+          <p><strong>Email:</strong> stay@hotelbooking.com</p>
+          <p><strong>Phone:</strong> 0123-456-789</p>
+        </div>
+        <div class="contact-form">
+          <h2>Get in Touch</h2>
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="follow-us">
+          <p>Follow us:</p>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////////////////////////////////////////////////////// -->
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">The best day to join Hotelify is today!</h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer" id="Footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img
+        src="/HotelDatabase/wwwroot/img/icon.png"
+        alt="Logo"
+        class="footer__logo"
+      />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://www.instagram.com/aditya.parihaarr/"
+          >Aditya Parihar</a
+        >.
+      </p>
+    </footer>
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Open your account <br />
+        in just <span class="highlight">5 minutes</span>
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
